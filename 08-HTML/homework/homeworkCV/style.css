@@ -1,0 +1,61 @@
+*{
+width: 100%;
+margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "foto foto"
+                         "titulo titulo"
+                         "descripcion descripcion"
+                         "educacion experiencias"
+                         "skills hobbies"
+                         "expectativas expectativas";
+grid-template-columns: 50% 50% ;
+grid-template-rows: 150px 80px 100px 250px 220px 150px;
+font-size: 20px;
+font-variant: small-caps;
+}
+
+header{
+    grid-area: titulo;
+    text-align: center;
+    color: firebrick;
+    font-size: 40px;
+}
+
+.description{
+    grid-area: descripcion;
+    text-align: justify;
+}
+
+.estudios{
+    grid-area: educacion;
+    border: 2px solid pink;
+}
+
+.experiencias{
+    grid-area: experiencias;
+    border: 2px solid yellow;
+}
+
+.skills{
+    grid-area: skills;
+    border: 2px solid grey;
+}
+
+img{
+    grid-area: foto;
+    border-radius: 200px;
+    width: 250px;
+    height: 220px;
+}
+.hobbies{
+    grid-area: hobbies;
+    border: 2px solid crimson;
+}
+.expectativa{
+    grid-area: expectativas;
+    text-align: center;
+    border: 2px solid aqua;
+}

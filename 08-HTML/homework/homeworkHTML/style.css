@@ -1,0 +1,34 @@
+body{
+    background-image: linear-gradient(white,blue, white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divClass{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+h1{
+    color: crimson;
+}
+
+img{
+    width: 400px;
+    height: 250px;
+}
+
+#thirdDiv{
+    display: block;
+    width: 500px;
+    height: 600px;
+    background-color: green;
+    display: flex
+    padding: 50px;
+    border: 2px solid yellow;
+}
+
+#spanId{
+    font-size: 18px;
+}

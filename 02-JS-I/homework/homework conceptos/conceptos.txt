@@ -1,0 +1,7 @@
+* Variables: sirven para almacenar un valor que sera utilizado luego cuando se inicie una funcion
+* Strings: bloques donde se colocan textos definidos con "" o conmillas simples
+* Funciones: son acciones que tienen la propiedad que le demos
+                    (argumentos : son los datos que damos para agrupar o sustituir partes del codigo o darle un valor especifico
+                     `return`: detiene todo proceso de una funcion y devuelve el valor antes especificado)
+* Declaraciones `if`: es un flujo de operador para verificar si continua o no el proceso con true o false
+* Valores booleanos (`true`, `false`) proceden por tratarse de codigo binario

@@ -36,7 +36,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor151
   // Tu código:
   var suma= x+y;
-  return sum;
+  return suma;
 }
 
 function resta(x, y) {
@@ -179,7 +179,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
  
   if (numero < 0) return "Es negativo";
-  else if (numero === 0) return "false";
+  else if (numero === 0) return false;
   else return "Es positivo";
   
 }
@@ -205,8 +205,8 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
-  reeturn `Hola${nombre}!`;
+  return "Hola" + " " + nombre + "!";
+  // return `Hola${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -247,10 +247,10 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length > 1) return "Dato Incorrecto"; 
-  else if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u")
-  return "Es vocal"; 
-  else return "Dato Incorrecto";
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+  return "Es vocal"; }
+  else if (letra.length > 1) return "Dato incorrecto"; 
+  else return "Dato incorrecto";
   
 }
 

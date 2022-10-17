@@ -1,0 +1,5 @@
+* `for` : mas complejo que if necesita en parentesis establecer una variable ; una expresion condicional; y un incremento de la variable
+si es tru se repetira cuando de false cesara
+* `&&`: "and" evalua ambas expresiones y devuelve true si ambas son true si una no lo es regresa false
+, `||`: "or" evalua ambas expresiones y regresa true si las 2 o si una expresion es true, solo regresa false si las 2 expresiones son false
+, `!`devuelve lo contrario de la expresion

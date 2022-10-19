@@ -72,8 +72,9 @@ function filter(array) {
   //Tu código:
 
   //   var nuevoArreglo = [];
-  // for (var i of array){
-  // if (i[0] == "a") nuevoArreglo.push(i);
+  // for (var i = 0; 1< array.length; i++){
+  // if (array[i][0] == "a"){
+    //  nuevoArreglo.push(array[i]);
   // }
   // return nuevoArreglo;
 

@@ -17,9 +17,7 @@ function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
-  return cb (n1,n2);
-
-
+  return cb(n1, n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -34,20 +32,20 @@ function sumarArray(numeros, cb) {
   // }
   // cb(suma);
 
-var suma = 0;
-numeros.forEach((element )=> {
-  suma = suma + element;
-});
-cb(suma);
+  var suma = 0;
+  numeros.forEach((element) => {
+    suma = suma + element;
+  });
+  cb(suma);
 }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  for (var i = 0; 1< array.length; i++) {
+  for (var i = 0; 1 < array.length; i++) {
     cb(array[i]);
-  };
+  }
 }
 
 function map(array, cb) {
@@ -62,21 +60,26 @@ function map(array, cb) {
   // };
   // return nuevoArreglo;
 
-var nuevoArreglo = array.map (function(elemento){
-  return cb(elemento);
-});
-return nuevoArreglo;
+  var nuevoArreglo = array.map(function (elemento) {
+    return cb(elemento);
+  });
+  return nuevoArreglo;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var nuevoArreglo = [];
-for (var i of array){
-if (i[0] == "a") nuevoArreglo.push(i);
-}
-return nuevoArreglo;
+
+  //   var nuevoArreglo = [];
+  // for (var i of array){
+  // if (i[0] == "a") nuevoArreglo.push(i);
+  // }
+  // return nuevoArreglo;
+
+  return array.filter(function (elemento) {
+    return elemento[0] == "a";
+  });
 }
 
 // No modificar nada debajo de esta línea
@@ -89,5 +92,5 @@ module.exports = {
   sumarArray,
   forEach,
   map,
-  filter
+  filter,
 };
